@@ -5,11 +5,11 @@ import java.time.LocalDateTime;
 public class Examen {
     private int id;
     private String titre;
-    private Cour cour;
+    private Cours cour;
     private LocalDateTime dateExamen;
     private int coefficient;
 
-    public Examen(int id, String titre, Cour cour, LocalDateTime dateExamen, int coefficient) {
+    public Examen(int id, String titre, Cours cour, LocalDateTime dateExamen, int coefficient) {
         this.id = id;
         this.titre = titre;
         this.cour = cour;
@@ -25,7 +25,7 @@ public class Examen {
         return dateExamen;
     }
 
-    public Cour getCour() {
+    public Cours getCours() {
         return cour;
     }
 

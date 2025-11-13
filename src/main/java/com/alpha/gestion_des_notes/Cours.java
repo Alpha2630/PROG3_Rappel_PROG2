@@ -1,12 +1,12 @@
 package com.alpha.gestion_des_notes;
 
-public class Cour {
+public class Cours {
     private int id;
     private String label;
     private int credit;
     private Enseignant enseignant;
 
-    public Cour(int id, Enseignant enseignant, int credit, String label) {
+    public Cours(int id, Enseignant enseignant, int credit, String label) {
         this.id = id;
         this.enseignant = enseignant;
         this.credit = credit;
