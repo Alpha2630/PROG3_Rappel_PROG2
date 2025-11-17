@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class GestionNotes {
 
-    private List<Note> notes;
+    private final List<Note> notes;
 
     public GestionNotes(List<Note> notes) {
         this.notes = notes;
@@ -24,7 +24,7 @@ public class GestionNotes {
         List<Note> notesCours = notes.stream()
                 .filter(n -> n.getExamen().getCours().equals(cours)
                         && n.getEtudiant().equals(etudiant))
-                .collect(Collectors.toList());
+                .toList();
 
         double totalCoef = notesCours.stream().mapToDouble(n -> n.getExamen().getCoefficient()).sum();
         double total = notesCours.stream()

@@ -18,4 +18,10 @@ public class Personne {
         this.prenom = prenom;
         this.nom = nom;
     }
+    public int getId() { return id; }
+    public String getNom() { return nom; }
+    public String getPrenom() { return prenom; }
+    public LocalDateTime getDateNaissance() { return dateNaissance; }
+    public String getEmail() { return email; }
+    public String getNumeroTelephone() { return numeroTelephone; }
 }
